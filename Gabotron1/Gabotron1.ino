@@ -1,6 +1,7 @@
 /*
-
+Gabotron1
 */
+
 #include <JC_Button.h>          // https://github.com/JChristensen/JC_Button
 
 // pins
@@ -79,6 +80,7 @@ void led_off(int led_num) {
   }
 }
 
+// This function didn't get Gabbe approved, kept here for future development
 void sleepmode()
 {
   long time1 = millis();
@@ -216,6 +218,7 @@ void loop() {
     lastActivity = millis();
   }
 
+  /* Removed, not approved by Gabbe in betatest
   // check if we are sleeping
   if (millis() > lastActivity + SLEEP_DLY)
   {
@@ -225,4 +228,5 @@ void loop() {
     Gsta = false;
     Bsta = false;
   }
+  */
 }
